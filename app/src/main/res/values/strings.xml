@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DUIclass</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="btn_label1"> Fragment One </string>
+    <string name="btn_label2"> Fragment Two </string>
+</resources>
