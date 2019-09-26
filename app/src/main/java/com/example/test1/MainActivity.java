@@ -23,8 +23,6 @@ public class MainActivity extends FragmentActivity {
 //    // initialize the first elements of the array
 //    arr[0] = 10;
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +32,8 @@ public class MainActivity extends FragmentActivity {
             public void onClick(View view) {
                 Fragment fragment = null;
                 if(view == findViewById(R.id.button1)){
-                    fragment = new FragmentOne();
+//                    fragment = new FragmentOne();
+                    fragment = new FragmentTwo();
                 } else {
                     fragment = new FragmentTwo();
                 }
