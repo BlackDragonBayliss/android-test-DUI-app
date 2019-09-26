@@ -16,17 +16,20 @@ public class QuestionDropdownFragment extends Fragment implements AdapterView.On
     private Spinner spinner;
     private static final String[] items = {"item 1", "item 2", "item 3"};
 
+    //getting a question, moving to future indexes, navigating back. representing different fragments.
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.question_dropdown_fragment, viewGroup, false);
 //        TextView output= (TextView)view.findViewById(R.id.msg1);
-
+//        QuestionObject question = ((AnswerQuestions) getActivity()).getResult();
+        QuestionObject question = ((AnswerQuestions) getActivity()).getQuestion();
         //
 
         spinner = (Spinner)view.findViewById(R.id.spinner);
 //        ArrayAdapter<String>adapter = new ArrayAdapter<String>(QuestionDropdownFragment.this,
 //                android.R.layout.simple_spinner_item,paths);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, question.getAnswerList());
 //set the spinners adapter to the previously created one.
 //        dropdown.setAdapter(adapter);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
