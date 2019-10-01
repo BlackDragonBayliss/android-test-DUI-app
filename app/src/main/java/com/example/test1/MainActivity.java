@@ -26,32 +26,32 @@ public class MainActivity extends FragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.question_edittext_fragment);
 
-        View.OnClickListener listener = new View.OnClickListener() {
-            public void onClick(View view) {
-                Fragment fragment = null;
-                if(view == findViewById(R.id.button1)){
-//                    fragment = new FragmentOne();
-                    fragment = new FragmentTwo();
-                } else {
-                    fragment = new FragmentTwo();
-                }
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.output, fragment);
-                transaction.commit();
-            }
-        };
-
-        Button btn1 = (Button)findViewById(R.id.button1);
-        btn1.setOnClickListener(listener);
-        Button btn2 = (Button)findViewById(R.id.button2);
-        btn2.setOnClickListener(listener);
-
-//        ArrayList<String> gfg = new ArrayList<String>();
-//        gfg.add("Geeks");
-//        System.out.println("ArrayList : " + gfg);
+//        View.OnClickListener listener = new View.OnClickListener() {
+//            public void onClick(View view) {
+//                Fragment fragment = null;
+//                if(view == findViewById(R.id.button1)){
+////                    fragment = new FragmentOne();
+//                    fragment = new FragmentTwo();
+//                } else {
+//                    fragment = new FragmentTwo();
+//                }
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction transaction = manager.beginTransaction();
+//                transaction.replace(R.id.output, fragment);
+//                transaction.commit();
+//            }
+//        };
+//
+//        Button btn1 = (Button)findViewById(R.id.button1);
+//        btn1.setOnClickListener(listener);
+//        Button btn2 = (Button)findViewById(R.id.button2);
+//        btn2.setOnClickListener(listener);
+//
+////        ArrayList<String> gfg = new ArrayList<String>();
+////        gfg.add("Geeks");
+////        System.out.println("ArrayList : " + gfg);
     }
 
 

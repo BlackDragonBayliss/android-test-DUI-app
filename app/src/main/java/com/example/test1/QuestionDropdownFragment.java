@@ -21,10 +21,10 @@ public class QuestionDropdownFragment extends Fragment implements AdapterView.On
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.question_dropdown_fragment, viewGroup, false);
-//        TextView output= (TextView)view.findViewById(R.id.msg1);
-//        QuestionObject question = ((AnswerQuestions) getActivity()).getResult();
+        TextView questionText = (TextView)view.findViewById(R.id.questionText);
         QuestionObject question = ((AnswerQuestions) getActivity()).getQuestion();
-        //
+        questionText.setText(question.getQuestion());
+//        QuestionObject question = ((AnswerQuestions) getActivity()).getResult();
 
         spinner = (Spinner)view.findViewById(R.id.spinner);
 //        ArrayAdapter<String>adapter = new ArrayAdapter<String>(QuestionDropdownFragment.this,
@@ -35,7 +35,6 @@ public class QuestionDropdownFragment extends Fragment implements AdapterView.On
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-//        output.setText("QuestionDropdownFragment");
         return view;
     }
 
@@ -44,10 +43,12 @@ public class QuestionDropdownFragment extends Fragment implements AdapterView.On
 
         switch (position) {
             case 0:
+
                 // Whatever you want to happen when the first item gets selected
                 break;
             case 1:
                 // Whatever you want to happen when the second item gets selected
+                ((AnswerQuestions) getActivity()).nextQuestion();
                 break;
             case 2:
                 // Whatever you want to happen when the thrid item gets selected

@@ -1,28 +1,38 @@
 package com.example.test1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class QuestionObject {
     private String question, format;
-    private String[] answerList;
+    private List<String> answerList;
     private int id, correctAnswerIndex;
+    private boolean isHingeQuestion;
+//    private String[] listAnswerHingeQuestionList;
+    private ArrayList<ArrayList<QuestionObject>> listAnswerHingeQuestionList = new ArrayList<ArrayList<QuestionObject>>();
 
-    public QuestionObject(String question, String[] answerList, int correctAnswerIndex, String format, int id){
+    public QuestionObject(String question, List<String> answerList, int correctAnswerIndex, String format, int id,
+                          boolean isHingeQuestion, ArrayList<ArrayList<QuestionObject>> listAnswerHingeQuestionList){
         super();
         this.question = question;
         this.answerList = answerList;
         this.correctAnswerIndex = correctAnswerIndex;
         this.format = format;
         this.id = id;
+        this.isHingeQuestion = isHingeQuestion;
+        this.listAnswerHingeQuestionList = listAnswerHingeQuestionList;
     }
+
     public void setQuestion(String question) {
         this.question = question;
     }
-    public String getQuestions() {
+    public String getQuestion() {
         return question;
     }
-    public void setAnswerList(String[] answerList) {
+    public void setAnswerList(List<String> answerList) {
         this.answerList = answerList;
     }
-    public String[] getAnswerList() {
+    public List<String> getAnswerList() {
         return answerList;
     }
     public void setCorrectAnswerIndex(int correctAnswerIndex){

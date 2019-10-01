@@ -11,38 +11,43 @@
     android:orientation="vertical"
     tools:context="com.example.test1.QuestionMultipleChoiceFragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_marginBottom="40dp">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginBottom="40dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Score"
-            android:textSize="20sp"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/score_text"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Score"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:id="@+id/score_text"/>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/score"
-            android:layout_alignParentRight="true"
-            android:text="0"
-            android:textSize="20sp"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/score"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:text="0"-->
+<!--            android:textSize="20sp"/>-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
     <TextView
+        android:id="@+id/questionText"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Which thing is alive?"
-        android:textSize="20sp"
-        android:padding="8dp"
-        android:layout_marginBottom="40dp"
-        android:id="@+id/question"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Question" />
 
 
     <Button
@@ -65,24 +70,33 @@
         android:layout_marginBottom="24dp"
         android:id="@+id/choice2"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="rock"
-        android:background="#0091EA"
-        android:textColor="#fff"
-        android:padding="8dp"
-        android:layout_marginBottom="24dp"
-        android:id="@+id/choice3"/>
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="rock"-->
+<!--        android:background="#0091EA"-->
+<!--        android:textColor="#fff"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:id="@+id/choice3"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="rock"-->
+<!--        android:background="#0091EA"-->
+<!--        android:textColor="#fff"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:id="@+id/choice4"/>-->
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="quit"
-        android:background="#B71C1C"
-        android:textColor="#fff"
-        android:padding="8dp"
-        android:layout_marginBottom="24dp"
-        android:id="@+id/quit"/>
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="quit"-->
+<!--        android:background="#B71C1C"-->
+<!--        android:textColor="#fff"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:id="@+id/quit"/>-->
 
 </LinearLayout>
